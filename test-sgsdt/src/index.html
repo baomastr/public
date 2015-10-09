@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>new page</title>
-    <!-- Less -->
-    <link rel="stylesheet/less" href="css/style.less"/>
-    <script type="text/javascript" src="js/less.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -16,6 +13,10 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
+    <!-- Less -->
+    <link rel="stylesheet/less" href="less/font-awesome.less"/>
+    <link rel="stylesheet/less" href="css/style.less"/>
+    <script type="text/javascript" src="js/less.js"></script>
 </head>
 <body>
     <div class="navbar navbar-default navbar-static-top">
@@ -28,25 +29,220 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Логотип</a>
+                <a class="navbar-brand" href="#"> <i class="fa fa-circle" style="color: #f98561;"> <i class="fa fa-square" style="color: #23afc8;"></i></i> Your Logo </a>
             </div>
-            <div class="collapse navbar-collapse" id="responsive-menu">
+            <div class="collapse navbar-collapse pull-right" id="responsive-menu">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Пункт 1</a></li>
-                    <li><a href="#">Пункт 2</a></li>
-                    <li><a href="#">Пункт 3</a></li>
-                    <li><a href="#">Пункт 4</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="btn btn-danger" id="blog" >Blog</a></li>
+                    <li><a href="#">Search <i class="fa fa-search"></i></a></li>
+
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <h1>Название страницы</h1>
+    <!-- индикаторы слайдов -->
+    <div id="carousel" class="carousel slide">
+        <ol class="carousel-indicators pull-right">
+            <li class="active" data-target="#carousel" data-slide="0"></li>
+            <li data-target="#carousel" data-slide="1"></li>
+            <li data-target="#carousel" data-slide="2"></li>
+        </ol>
+
+        <!-- слайды-->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/slide0.png" alt=""/>
+                <div class="carousel-caption">
+                    <h3>Good Design Is Good Business</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo.
+                        Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+                    <a href="#" class="btn btn-primary btn-lg">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/slide0.png" alt=""/>
+                <div class="carousel-caption">
+                    <h3>Второй слайд</h3>
+                    <p>Описание Второго слайда</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/slide0.png" alt=""/>
+                <div class="carousel-caption">
+                    <h3>Третий слайд</h3>
+                    <p>Описание третьего слайда</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- стрелки переключения слайдов -->
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-shevron-left"></span>
+
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-shevron-right"></span>
+        </a>
+
+    </div>
+
+    <div class="service gray">
+        <div class="container" id="service">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 center-block">
+                    <img src="images/laptop.png" alt="Responsive image" class="img-responsive"/>
+                    <h4 class="text-center">Web Design</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus
+                        commodo suscipit. <a href="">Details...</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <img src="images/search.png" alt="Responsive image" class="img-responsive"/>
+                    <h4 class="text-center">Search Optimization</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus
+                        commodo suscipit. <a href="">Details...</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <img src="images/buy.png" alt="Responsive image" class="img-responsive"/>
+                    <h4 class="text-center">Online Shop</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus
+                        commodo suscipit. <a href="">Details...</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <img src="images/thumb.png" alt="Responsive image" class="img-responsive"/>
+                    <h4 class="text-center">Social Media</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus
+                        commodo suscipit. <a href="">Details...</a></p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <h1>Привет, мир!</h1>
+
+    <div class="portfolio blue">
+        <div class="container" id="portfolio">
+            <div class="row">
+                <h2 class="pull-left">Our Portfolio Awesome</h2>
+                <button type="button" class="btn btn-info pull-right">More Works</button>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <a href="#"><img src="images/photo.png" alt="Responsive image" class="img-responsive"/></a>
+                    <a href="#"><h4>Lorem Ipsum Dolar Sit Amet</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus commodo suscipit.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <a href="#"><img src="images/photo.png" alt="Responsive image" class="img-responsive"/></a>
+                    <a href="#"><h4>Lorem Ipsum Dolar Sit Amet</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus commodo suscipit.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <a href="#"><img src="images/photo.png" alt="Responsive image" class="img-responsive"/></a>
+                    <a href="#"><h4>Lorem Ipsum Dolar Sit Amet</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus commodo suscipit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about gray">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">WHAT WE OFFER</h1>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo. Ut eget eros mauris, ut cursus urna.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 center-block">
+
+                    <h4 class="text-left">Web Design</h4>
+                    <p class="text-left">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus
+                        commodo suscipit. <a href="">Details...</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+
+                    <h4 class="text-left">Search Optimization</h4>
+                    <p class="text-left">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus
+                        commodo suscipit. <a href="">Details...</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+
+                    <h4 class="text-left">Online Shop</h4>
+                    <p class="text-left">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus
+                        commodo suscipit. <a href="">Details...</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+
+                    <h4 class="text-left">Social Media</h4>
+                    <p class="text-left">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus
+                        commodo suscipit. <a href="">Details...</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <h3>TWITTER FEEDS</h3>
+                    <div class="feed">
+                        <p>Check out this great theme item</p>
+                        <a href="#">http://tadjalskfj.com</a>
+                        <p>2 weeks ago</p>
+                        <hr/>
+                    </div>
+                    <div class="feed">
+                        <p>Check out this great theme item</p>
+                        <a href="#">http://tadjalskfj.com</a>
+                        <p>2 weeks ago</p>
+                        <hr/>
+                    </div>
+                    <div class="feed">
+                        <p>Check out this great theme item</p>
+                        <a href="#">http://tadjalskfj.com</a>
+                        <p>2 weeks ago</p>
+                        <hr/>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <h3>NEWSLETTER</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip
+                        iscing elit. Ut ultricies sagittis magna a comm.
+                        Ut eget eros mauris, ut cursus urna.
+                    </p>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <h3>RECENT PROJECTS</h3>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <h3>CONTACT</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
