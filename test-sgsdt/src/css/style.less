@@ -9,7 +9,7 @@
         padding-top: 25px;
       }
     }
-    #responsive-menu {
+    #navbarCollapse {
       .navbar-nav {
         min-height: 70px;
         li {
@@ -19,6 +19,22 @@
             background-color: #23afc8;
           }
         }
+      }
+      #top-menu {
+        li.active{
+          background-color: #23afc8 !important;
+          a {
+            -webkit-transition: 1s all ease;
+            -moz-transition: 1s all ease;
+            transition: 1s all ease;
+            border-bottom: 3px solid #0080b7;
+            color: white;
+            background-color: #23afc8;
+          }
+        }
+      }
+      #top-menu a:hover {
+        border-bottom: 5px solid #0080b7;
       }
     }
     #blog {
@@ -45,38 +61,26 @@
   }
 }
 
+
+
 #carousel {
   .carousel-inner {
     .item {
+      text-align: center;
       img {
-        width: 100%;
+        display: inline-block;
       }
     }
   }
 }
-/*
-@media (min-width: 768px) {
-  .navbar {
-    #responsive-menu {
-      .container {
-        .navbar-nav {
-          min-height: 70px;
-          li {
-            a:hover {
-              color: white;
-              background: url("../images/hover.png") 50% 100% no-repeat !important;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
+
 .gray {
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   background-color: #f4f4f4;
 }
+
 #wwo {
   .container {
     .row {
@@ -86,29 +90,18 @@
     }
   }
 }
+
 #service {
   .row {
-    .col-sm-3 .col-md-3 .col-lg-3 {
-      img {
-        margin-top: 50px;
-        padding-left: 25%;
-      }
-      h4 {
-        text-align: center !important;
-      }
-    }
     .col-xs-6 {
+      text-align: center;
       img {
-        margin-top: 50px;
-        margin-left: 25%;
-        margin-right: 25%;
-        width: 118px;
-        height: auto;
+        display: inline-block;
       }
+
     }
   }
 }
-
 
 .blue {
   width: 100%;
@@ -123,12 +116,28 @@
   }
 }
 
+.portfolio {
+  padding-bottom: 50px;
+  .container {
+    .row {
+      h2, button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .col-md-4 .col-lg-4 {
+        p {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
 .footer {
   .feed {
     a {
       color: #247fa9;
     }
   }
-
 }
 
