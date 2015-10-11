@@ -32,7 +32,7 @@
             })
         });
     </script>
-    <!-- <script src="https://api.instagram.com/v1/tags/{tag-name}/media/recent?access_token=ACCESS-TOKEN"></script> -->
+
 </head>
 <body>
     <nav id="myNavbar" role="navigation">
@@ -72,11 +72,14 @@
         <div class="carousel-inner" id="home">
             <div class="item active">
                 <img src="images/slide0.png" alt=""/>
-                <div class="carousel-caption">
+                <div class="carousel-caption hidden-xs">
                     <h2>Good Design Is Good Business</h2>
                     <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo.
                         Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
                     <a href="#" class="btn btn-warning btn-lg hidden-xs">LEARN MORE</a>
+                </div>
+                <div class="carousel-caption visible-xs">
+                    <h2>Good Design Is Good Business</h2>
                     <a href="#" class="btn btn-warning btn-sm visible-xs">LEARN MORE</a>
                 </div>
             </div>
@@ -325,7 +328,7 @@
     </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
 </body>
