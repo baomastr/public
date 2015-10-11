@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>new page</title>
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -59,7 +63,7 @@
 </nav>
     <!-- индикаторы слайдов -->
     <div id="carousel" class="carousel slide">
-        <ol class="carousel-indicators pull-right">
+        <ol class="carousel-indicators pull-right hidden-xs">
             <li class="active" data-target="#carousel" data-slide="0"></li>
             <li data-target="#carousel" data-slide="1"></li>
             <li data-target="#carousel" data-slide="2"></li>
@@ -70,10 +74,10 @@
             <div class="item active">
                 <img src="images/slide0.png" alt=""/>
                 <div class="carousel-caption">
-                    <h3>Good Design Is Good Business</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo.
+                    <h3 class="hidden-xs">Good Design Is Good Business</h3>
+                    <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo.
                         Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
-                    <a href="#" class="btn btn-primary btn-lg">LEARN MORE</a>
+                    <a href="#" class="btn btn-primary btn-lg hidden-xs">LEARN MORE</a>
                 </div>
             </div>
             <div class="item">
@@ -219,7 +223,7 @@
     <div class="footer blue" >
         <div class="container" >
             <div class="row">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <h3>TWITTER FEEDS</h3>
                     <div class="feed">
                         <p>Check out this great theme item</p>
@@ -240,7 +244,7 @@
                         <hr/>
                     </div>
                 </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <h3>NEWSLETTER</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adip
@@ -249,7 +253,7 @@
                     </p>
                     <hr/>
                 </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <h3>RECENT PROJECTS</h3>
                     <img src="images/proj.png" alt="Responsive image" class="img-responsive pull-left"/>
                     <p>Sketchy Business Card</p>
@@ -267,17 +271,25 @@
                     <p>2 weeks ago</p>
                     <hr/>
                 </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="footer">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3" id="footer">
                     <h3>CONTACT</h3>
-                    <img src="images/phone.png" alt="Responsive image" class="img-responsive pull-left clearfix"/>
-                    <p>1 - 000 - 000-0000</p>
-                    <p>1 - 000 - 000-0000</p>
-                    <img src="images/sms.png" alt="Responsive image" class="img-responsive pull-left"/>
-                    <p>1 - 000 - 000-0000</p>
-                    <p>1 - 000 - 000-0000</p>
-                    <img src="images/mail.png" alt="Responsive image" class="img-responsive pull-left"/>
-                    <p>abcdefg@hijs.dfh</p>
-                    <p>fjashfaf@jkfs.ckd</p>
+                    <div class="row">
+                        <img src="images/phone.png" alt="Responsive image" class="img-responsive pull-left clearfix"/>
+                        <p>1 - 000 - 000-0000</p>
+                        <p>1 - 000 - 000-0000</p>
+                    </div>
+                    <div class="row">
+                        <img src="images/sms.png" alt="Responsive image" class="img-responsive pull-left"/>
+                        <p>1 - 000 - 000-0000</p>
+                        <p>1 - 000 - 000-0000</p>
+                    </div>
+                    <div class="row">
+                        <img src="images/mail.png" alt="Responsive image" class="img-responsive pull-left"/>
+                        <p>abcdefg@hijs.dfh</p>
+                        <p>fjashfaf@jkfs.ckd</p>
+                    </div>
+
+
                 </div>
             </div>
         </div>
