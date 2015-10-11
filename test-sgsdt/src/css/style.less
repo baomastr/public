@@ -40,9 +40,13 @@ h1 h2 h3 h4 h5 h6 {
 
       li {
         a:hover {
-          color: white;
+          font-size: medium;
+          -webkit-transition: 1s all ease;
+          -moz-transition: 1s all ease;
+          transition: 1s all ease;
+          /*color: white;*/
           /*background: url("../images/hover.png") 50% 100% no-repeat;*/
-          background-color: rgba(19, 163, 212, 0.51);
+          /*background-color: rgba(19, 163, 212, 0.51);*/
         }
 
       }
@@ -75,8 +79,14 @@ h1 h2 h3 h4 h5 h6 {
   .carousel-inner {
     .item {
       text-align: center;
-      img {
-        display: inline-block;
+      .carousel-caption {
+        img {
+          display: inline-block;
+        }
+        .btn {
+          background-color: #f98561;
+          border: none;
+        }
       }
     }
   }
@@ -172,7 +182,8 @@ h1 h2 h3 h4 h5 h6 {
       margin-right: 15px;
     }
     p {
-      margin-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0 !important;
     }
   }
 

@@ -34,6 +34,9 @@
             })
         });
     </script>
+    <script
+        src="https://api.instagram.com/v1/tags/{tag-name}/media/recent?access_token=ACCESS-TOKEN https://api.instagram.com/v1/tags/{tag-name}/media/recent?access_token=ACCESS-TOKEN">
+    </script>
 </head>
 <body>
 <nav id="myNavbar" role="navigation">
@@ -50,12 +53,12 @@
             </div>
             <div class="collapse navbar-collapse pull-right" id="responsive-menu">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home">Home</a></li>
+                    <li class="active in"><a href="#home">Home</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#footer">Contact</a></li>
                     <li><a href="#" class="btn btn-danger" id="blog" >Blog</a></li>
-                    <li><a href="#">Search <i class="fa fa-search"></i></a></li>
+                    <li><a href="#">Search <!-- <i class="fa fa-search"></i> --> <img src="images/search_top.png" alt="search"/></a></li>
                 </ul>
             </div>
         </div>
@@ -74,10 +77,11 @@
             <div class="item active">
                 <img src="images/slide0.png" alt=""/>
                 <div class="carousel-caption">
-                    <h3 class="hidden-xs">Good Design Is Good Business</h3>
+                    <h3>Good Design Is Good Business</h3>
                     <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo.
                         Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
-                    <a href="#" class="btn btn-primary btn-lg hidden-xs">LEARN MORE</a>
+                    <a href="#" class="btn btn-warning btn-lg hidden-xs">LEARN MORE</a>
+                    <a href="#" class="btn btn-warning btn-sm visible-xs">LEARN MORE</a>
                 </div>
             </div>
             <div class="item">
