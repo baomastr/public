@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,44 +32,42 @@
             })
         });
     </script>
-    <script
-        src="https://api.instagram.com/v1/tags/{tag-name}/media/recent?access_token=ACCESS-TOKEN https://api.instagram.com/v1/tags/{tag-name}/media/recent?access_token=ACCESS-TOKEN">
-    </script>
+    <!-- <script src="https://api.instagram.com/v1/tags/{tag-name}/media/recent?access_token=ACCESS-TOKEN"></script> -->
 </head>
 <body>
-<nav id="myNavbar" role="navigation">
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-                    <span class="sr-only">Открыть навигацию</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"> <i class="fa fa-circle" style="color: #f98561;"> <i class="fa fa-square" style="color: #23afc8;"></i></i> Your Logo </a>
-            </div>
-            <div class="collapse navbar-collapse pull-right" id="responsive-menu">
-                <ul class="nav navbar-nav">
-                    <li class="active in"><a href="#home">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                    <li><a href="#" class="btn btn-danger" id="blog" >Blog</a></li>
-                    <li><a href="#">Search <!-- <i class="fa fa-search"></i> --> <img src="images/search_top.png" alt="search"/></a></li>
-                </ul>
-            </div>
+    <nav id="myNavbar" role="navigation">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                        <span class="sr-only">Открыть навигацию</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"> <i class="fa fa-circle" style="color: #f98561;"> <i class="fa fa-square" style="color: #23afc8;"></i></i> Your Logo </a>
+                </div>
+                <div class="collapse navbar-collapse pull-right" id="responsive-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active in"><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="#" class="btn btn-danger" id="blog" >Blog</a></li>
+                        <li><a href="#">Search <!-- <i class="fa fa-search"></i> --> <img src="images/search_top.png" alt="search"/></a></li>
+                    </ul>
+                </div>
         </div>
     </div>
 </nav>
-    <!-- индикаторы слайдов -->
-    <div id="carousel" class="carousel slide">
-        <ol class="carousel-indicators pull-right hidden-xs">
-            <li class="active" data-target="#carousel" data-slide="0"></li>
-            <li data-target="#carousel" data-slide="1"></li>
-            <li data-target="#carousel" data-slide="2"></li>
-        </ol>
 
+    <div id="carousel" class="carousel slide">
+        <!-- индикаторы слайдов -->
+        <ol class="carousel-indicators hidden-xs">
+            <li class="active pull-right" data-target="#carousel" data-slide="0"></li>
+            <li class="pull-right" data-target="#carousel" data-slide="1"></li>
+            <li class="pull-right" data-target="#carousel" data-slide="2"></li>
+        </ol>
         <!-- слайды-->
         <div class="carousel-inner" id="home">
             <div class="item active">
@@ -98,7 +94,6 @@
                     <p>Описание третьего слайда</p>
                 </div>
             </div>
-            
         </div>
         
         <!-- стрелки переключения слайдов -->
@@ -109,11 +104,13 @@
         <a href="#carousel" class="right carousel-control" data-slide="next">
             <span class="glyphicon glyphicon-shevron-right"></span>
         </a>
-
     </div>
 
     <div class="service gray">
         <div class="container" id="service">
+            <div class="row">
+                
+            </div>
             <div class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 center-block">
                     <img src="images/laptop.png" alt="Responsive image" class="img-responsive"/>
@@ -153,11 +150,38 @@
 
     <div class="portfolio  blue">
         <div class="container" id="portfolio">
-            <div class="row">
+            <div class="row hidden-xs">
                 <h2 class="pull-left">Our Portfolio Awesome</h2>
                 <button type="button" class="btn btn-info pull-right">More Works</button>
             </div>
-            <div class="row">
+            <div class="row visible-xs">
+                <h2 class="pull-left">Our Portfolio Awesome</h2>
+                <button type="button" class="btn btn-info pull-right">More Works</button>
+            </div>
+            <div class="row visible-xs">
+                <div class="col-xs-12">
+                    <a href="#"><img src="images/photo.png" alt="Responsive image" class="img-responsive"/></a>
+                    <br/>
+                    <a href="#"><h4>Lorem Ipsum Dolar Sit Amet</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus commodo suscipit.</p>
+                </div>
+                <div class="col-xs-12">
+                    <a href="#"><img src="images/photo.png" alt="Responsive image" class="img-responsive"/></a>
+                    <br/>
+                    <a href="#"><h4>Lorem Ipsum Dolar Sit Amet</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus commodo suscipit.</p>
+                </div>
+                <div class="col-xs-12">
+                    <a href="#"><img src="images/photo.png" alt="Responsive image" class="img-responsive"/></a>
+                    <br/>
+                    <a href="#"><h4 >Lorem Ipsum Dolar Sit Amet</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris nec ipsum at lacus commodo suscipit.</p>
+                </div>
+            </div>
+            <div class="row hidden-xs">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <a href="#"><img src="images/photo.png" alt="Responsive image" class="img-responsive"/></a>
                     <a href="#"><h4>Lorem Ipsum Dolar Sit Amet</h4></a>
@@ -184,12 +208,15 @@
         <div class="container" id="about">
             <div class="row">
                 <h1 class="text-center">WHAT WE OFFER</h1>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo. Ut eget eros mauris, ut cursus urna.
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+                <div class="col-lg-2 col-md-1"></div>
+                <div class="col-lg-8 col-md-10">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo. Ut eget eros mauris, ut cursus urna.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+                </div>
+                <div class="col-lg-2 col-md-1"></div>
             </div>
             <div class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 center-block">
-
                     <h4 class="text-left">Web Design</h4>
                     <p class="text-left">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.
@@ -197,7 +224,6 @@
                         commodo suscipit. <a href="">Details...</a></p>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-
                     <h4 class="text-left">Search Optimization</h4>
                     <p class="text-left">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.
@@ -205,7 +231,6 @@
                         commodo suscipit. <a href="">Details...</a></p>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-
                     <h4 class="text-left">Online Shop</h4>
                     <p class="text-left">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.
@@ -213,7 +238,6 @@
                         commodo suscipit. <a href="">Details...</a></p>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-
                     <h4 class="text-left">Social Media</h4>
                     <p class="text-left">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.
@@ -228,7 +252,7 @@
         <div class="container" >
             <div class="row">
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                    <h3>TWITTER FEEDS</h3>
+                    <h2>TWITTER FEEDS</h2>
                     <div class="feed">
                         <p>Check out this great theme item</p>
                         <a href="#">http://tadjalskfj.com</a>
@@ -245,11 +269,10 @@
                         <p>Check out this great theme item</p>
                         <a href="#">http://tadjalskfj.com</a>
                         <p>2 weeks ago</p>
-                        <hr/>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                    <h3>NEWSLETTER</h3>
+                    <h2>NEWSLETTER</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adip
                         iscing elit. Ut ultricies sagittis magna a comm.
@@ -258,7 +281,7 @@
                     <hr/>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                    <h3>RECENT PROJECTS</h3>
+                    <h2>RECENT PROJECTS</h2>
                     <img src="images/proj.png" alt="Responsive image" class="img-responsive pull-left"/>
                     <p>Sketchy Business Card</p>
                     <a href="#">http://tadjalskfj.com</a>
@@ -273,10 +296,9 @@
                     <p>Sketchy Business Card</p>
                     <a href="#">http://tadjalskfj.com</a>
                     <p>2 weeks ago</p>
-                    <hr/>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3" id="footer">
-                    <h3>CONTACT</h3>
+                    <h2>CONTACT</h2>
                     <div class="row">
                         <img src="images/phone.png" alt="Responsive image" class="img-responsive pull-left clearfix"/>
                         <p>1 - 000 - 000-0000</p>
@@ -292,8 +314,6 @@
                         <p>abcdefg@hijs.dfh</p>
                         <p>fjashfaf@jkfs.ckd</p>
                     </div>
-
-
                 </div>
             </div>
         </div>
