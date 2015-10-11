@@ -14,6 +14,19 @@ h1 h2 h3 h4 h5 h6 {
   margin-bottom: 0;
   min-height: 70px;
   background-color: white;
+  .collapse {
+    ul {
+      li {
+        line-height: 60px;
+        a {
+          line-height: 40px
+        }
+      }
+      li:last-child {
+        margin-left: 100px;
+      }
+    }
+  }
   .container {
     min-height: 70px;
     .navbar-header {
@@ -22,6 +35,14 @@ h1 h2 h3 h4 h5 h6 {
       }
     }
     #responsive-menu {
+      #blog {
+        color: white;
+        background-color: #f98561;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        border-width: 0;
+      }
       .navbar-nav {
         min-height: 70px;
         li.active{
@@ -40,7 +61,6 @@ h1 h2 h3 h4 h5 h6 {
 
       li {
         a:hover {
-          font-size: medium;
           -webkit-transition: 1s all ease;
           -moz-transition: 1s all ease;
           transition: 1s all ease;
@@ -51,28 +71,9 @@ h1 h2 h3 h4 h5 h6 {
 
       }
     }
-    #blog {
-      color: white;
-      background-color: #f98561;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin-top: 10px;
-      border-width: 0;
-    }
+
   }
-  .collapse {
-    ul {
-      li {
-        line-height: 60px;
-        a {
-          line-height: 40px
-        }
-      }
-      li:last-child {
-        margin-left: 100px;
-      }
-    }
-  }
+
 }
 #carousel {
   margin-top: 70px;
@@ -80,6 +81,7 @@ h1 h2 h3 h4 h5 h6 {
     .item {
       text-align: center;
       img {
+        margin: 0 auto;
         display: inline-block;
       }
       .carousel-caption {
@@ -98,6 +100,7 @@ h1 h2 h3 h4 h5 h6 {
   width: 100%;
   background-color: #f4f4f4;
 }
+
 #wwo {
   .container {
     .row {
@@ -131,7 +134,19 @@ h1 h2 h3 h4 h5 h6 {
     }
   }
 }
-
+/*
+.service {
+  .container {
+    .our-serv {
+      position: relative;
+      a {
+        display: block;
+        position: absolute;
+      }
+    }
+  }
+}
+*/
 .blue {
   width: 100%;
   background-color: #2e3e4f;
