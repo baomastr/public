@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url('../fonts/BebasNeue.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+h1 h2 h3 h4 h5 h6 {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+.navbar {
+  margin-bottom: 0;
+  min-height: 70px;
+  background-color: white;
+  .collapse {
+    ul {
+      li {
+        line-height: 60px;
+        a {
+          line-height: 40px
+        }
+      }
+      li:last-child {
+        margin-left: 100px;
+      }
+    }
+  }
+  .container {
+    min-height: 70px;
+    .navbar-header {
+      .navbar-brand {
+        padding-top: 25px;
+      }
+    }
+    #responsive-menu {
+      #blog {
+        color: white;
+        background-color: #f98561;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        border-width: 0;
+      }
+      .navbar-nav {
+        min-height: 70px;
+        li.active{
+          background-color: #12a3d6 !important;
+          a {
+            -webkit-transition: 1s all ease;
+            -moz-transition: 1s all ease;
+            transition: 1s all ease;
+            border-bottom: 5px solid #0080b7;
+            color: white;
+            background: #12a3d6 url("../images/hover.png") 50% 0 no-repeat;
+            background-size: auto;
+          }
+        }
+      }
+
+      li {
+        a:hover {
+          -webkit-transition: 1s all ease;
+          -moz-transition: 1s all ease;
+          transition: 1s all ease;
+          /*color: white;*/
+          /*background: url("../images/hover.png") 50% 100% no-repeat;*/
+          /*background-color: rgba(19, 163, 212, 0.51);*/
+        }
+
+      }
+    }
+
+  }
+
+}
+#carousel {
+  margin-top: 70px;
+  .carousel-inner {
+    .item {
+      text-align: center;
+      img {
+        margin: 0 auto;
+        display: inline-block;
+      }
+      .carousel-caption {
+        padding-bottom: 100px;
+        h2 {
+          font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+        }
+        .btn {
+          background-color: #f98561;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.gray {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+#wwo {
+  .container {
+    .row {
+      .col-lg-8 {
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+        color: #12a3d6;
+      }
+      h4 {
+        font-family: 'Bree Serif', serif;
+        color: #12a3d6;
+      }
+      .col-lg-6 {
+        text-align: center;
+        p {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+#service {
+  .row {
+    .col-xs-6 {
+      text-align: center;
+      img {
+        display: inline-block;
+      }
+    }
+  }
+}
+.service {
+  position: relative;
+  .container {
+    .os {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+/*
+.service {
+  .container {
+    .our-serv {
+      position: relative;
+      a {
+        display: block;
+        position: absolute;
+      }
+    }
+  }
+}
+*/
+
+#our-serv {
+  margin-top: -130px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  background-color: #2190c1;
+  opacity: 100;
+  font-size: large;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+.blue {
+  width: 100%;
+  background-color: #2e3e4f;
+  .row {
+    h2, h3 {
+      font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+      color: #f98561;
+    }
+    h4 {
+      color: #f98561;
+    }
+    p, hr {
+      color: #a3afb2;
+    }
+  }
+}
+.portfolio {
+  padding-bottom: 50px;
+  .container {
+    .visible-xs {
+      h2 {
+        margin-left: 20px;
+      }
+      button {
+        margin-right: 20px;
+      }
+      .col-xs-12 {
+        margin-bottom: 20px;
+        text-align: center;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+    .row {
+      .btn {
+        font-family: 'Ubuntu', sans-serif;
+      }
+      h2, button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .col-md-4 .col-lg-4 {
+        p {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding-bottom: 30px;
+  a {
+    color: #12a3d6;
+  }
+  .row {
+    margin-top: 20px;
+  }
+  img {
+    margin-right: 15px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+  }
+  #footer {
+    img {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+body {
+  p, a {
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+body h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+h4 {
+  font-family: 'Bree Serif', serif;
+}
