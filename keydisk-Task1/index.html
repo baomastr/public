@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Modal</title>
-
+    <title>Modal1</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,8 +17,7 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-<button class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-1">Заказать обратный звонок</button>
-
+<button class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-1"><i class="glyphicon glyphicon-earphone"></i></button>
 <div class="modal fade" id="modal-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -34,7 +31,7 @@
             </div>
             <div class="modal-body clearfix">
                 <form role="form">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
                         <div class="form-group">
                             <label for="exampleInputName"></label>
                             <input type="name" class="form-control" id="exampleInputName" placeholder="Ваше Имя:">
@@ -43,9 +40,24 @@
                             <label for="exampleInputNumber"></label>
                             <input type="tel" class="form-control" id="exampleInputNumber" placeholder="Ваш Телефон:">
                         </div>
+
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <button type="submit" class="btn btn-primary" data-dismiss="modal">Отправить</button>
+                    <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                        <button id="ok" onclick="foo()" type="submit" class="btn btn-primary" data-dismiss="modal">Отправить</button>
+                    </div>
+                    <!-- для телефонов -->
+                    <div class="visible-xs">
+                        <div class="form-group">
+                            <label for="exampleInputNameXs"></label>
+                            <input type="name" class="form-control" id="exampleInputNameXs" placeholder="Ваше Имя:">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputNumberXs"></label>
+                            <input type="tel" class="form-control" id="exampleInputNumberXs" placeholder="Ваш Телефон:">
+                        </div>
+                    </div>
+                    <div class="visible-xs">
+                        <button onclick="foo()" type="submit" class="btn btn-primary" data-dismiss="modal">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -55,10 +67,19 @@
         </div>
     </div>
 </div>
-
+<div id="DIV1"></div>
+<script>
+    function foo(){
+        document.getElementById("ok").onclick = function () {
+            document. write = 'text';
+        }
+    }
+</script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
 </body>
 </html>
+
+
