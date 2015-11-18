@@ -1,0 +1,6 @@
+.modal {
+    background: linear-gradient(to top, #fefcea, rgba(109, 109, 109, 0.07));
+}
+.modal-content {
+    background: linear-gradient(to bottom, #fefcea, rgba(0, 0, 0, 0.28));
+}
