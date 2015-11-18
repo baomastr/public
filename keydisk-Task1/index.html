@@ -14,72 +14,75 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.js"></script>
     <![endif]-->
-    <link href="css/main.css" rel="stylesheet">
 </head>
-<body>
-<button class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-1"><i class="glyphicon glyphicon-earphone"></i></button>
-<div class="modal fade" id="modal-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header clearfix">
-                <h4 class="modal-title pull-left">
-                    Заказать обратный звонок
-                </h4>
-                <button class="close pull-right" type="buton" data-dismiss="modal">
-                    <i class="glyphicon glyphicon-remove"></i>
-                </button>
-            </div>
-            <div class="modal-body clearfix">
-                <form role="form">
-                    <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
-                        <div class="form-group">
-                            <label for="exampleInputName"></label>
-                            <input type="name" class="form-control" id="exampleInputName" placeholder="Ваше Имя:">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputNumber"></label>
-                            <input type="tel" class="form-control" id="exampleInputNumber" placeholder="Ваш Телефон:">
-                        </div>
+  <body>
+  <!-- Модальное окно -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Заголовок модального окна -->
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title" id="myModalLabel">Форма заказа обратного звонка</h4>
+              </div>
+              <!-- Основная часть модального окна, содержащая форму для заказа обратного звонка -->
+              <div class="modal-body">
+                  <!-- Форма для обратного звонка -->
+                  <form role="form" class="form-horizontal">
+                      <!-- Блок для ввода имени -->
+                      <div class="form-group has-feedback">
+                          <label for="login" class="control-label col-xs-3">Имя:</label>
+                          <div class="col-xs-6">
+                              <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                  <input type="text" id="login" class="form-control" required="required" name="login" placeholder="Иван" pattern="[A-Za-zА-Яа-яЁё]{2,}">
+                              </div>
+                              <span class="glyphicon form-control-feedback"></span>
+                          </div>
+                      </div>
+                      <!-- Блок для ввода номера телефона -->
+                      <div class="form-group has-feedback">
+                          <label for="phone" class="control-label col-xs-3">Номер:</label>
+                          <div class="col-xs-6">
+                              <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                  <input type="tel" class="form-control" required="required" id="phone" name="phone" placeholder="84951112233" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,12}$">
+                              </div>
+                              <span class="glyphicon form-control-feedback"></span>
+                          </div>
+                      </div>
+                      <!-- Конец блока для ввода номера телефона-->
+                  </form>
+              </div>
+              <!-- Нижняя часть модального окна -->
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                  <button id="save" type="button" class="btn btn-primary">Оставить заявку</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
-                        <button id="ok" onclick="foo()" type="submit" class="btn btn-primary" data-dismiss="modal">Отправить</button>
-                    </div>
-                    <!-- для телефонов -->
-                    <div class="visible-xs">
-                        <div class="form-group">
-                            <label for="exampleInputNameXs"></label>
-                            <input type="name" class="form-control" id="exampleInputNameXs" placeholder="Ваше Имя:">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputNumberXs"></label>
-                            <input type="tel" class="form-control" id="exampleInputNumberXs" placeholder="Ваш Телефон:">
-                        </div>
-                    </div>
-                    <div class="visible-xs">
-                        <button onclick="foo()" type="submit" class="btn btn-primary" data-dismiss="modal">Отправить</button>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
+  <div class="container">
+      <!--Блок с сообщением об успешном заполнении формы-->
+      <div class="alert alert-success hidden" id="success-alert">
+          <h2>Успех</h2>
+          <div>Ваши данные были успешно отправлены.</div>
+      </div>
+      <!-- Кнопка для открытия модального окна -->
+      <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">
+          <i class="glyphicon glyphicon-phone-alt"></i>
+      </button>
+  </div>
 
-            </div>
-        </div>
-    </div>
-</div>
-<div id="DIV1"></div>
-<script>
-    function foo(){
-        document.getElementById("ok").onclick = function () {
-            document. write = 'text';
-        }
-    }
-</script>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
-</body>
+
+  <!--...-->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="jq/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+  <!--Скрипт для валидации форм модального окна-->
+  <script src="js/valid.js"></script>
+  
+  </body>
 </html>
-
-
